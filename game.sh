@@ -153,7 +153,7 @@ while true; do
         break
     fi
 
-    # check game over, player 2, have the final guess. 
+    # check game over, player 2, have the final guess, if p2 fail, then the game is over.  
     if [[ "$gameOver" == true ]]; then
         echo "$player2 failed to guess. $player1 wins!"
         break
