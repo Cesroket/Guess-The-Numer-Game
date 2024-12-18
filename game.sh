@@ -1,5 +1,39 @@
 #!/bin/bash
 
+###############################
+#       GTN GAME       #
+#     BASH VERSION 1.1       #
+#       Cesroket         #
+###############################
+
+clear
+
+cat << "EOF"
+
+###############################################
+#                                             #
+#   WELCOME TO THE ULTIMATE GUESSING GAME!    #
+#         Can you crack the code?            #
+#                                             #
+###############################################
+
+EOF
+
+sleep 2  # 2 are the seconds
+
+spinner=("|" "/" "-" "\\")
+for i in {1..10}
+do
+    printf "Initializing Game..." "${spinner[i % 4]}"
+    sleep 0.1
+done
+
+echo "Ready to play?"
+echo
+
+
+
+
 # insert players name
 read -p "Insert player 1 name: " player1
 read -p "Insert player 2 name: " player2
