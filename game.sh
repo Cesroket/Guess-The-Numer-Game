@@ -24,7 +24,7 @@ sleep 2  # 2 are the seconds
 spinner=("|" "/" "-" "\\")
 for i in {1..10}
 do
-    printf "Initializing Game..." "${spinner[i % 4]}"
+    printf "\r\e[1;32mInitializing Game %s\e[0m" "${spinner[i % 4]}"
     sleep 0.1
 done
 
