@@ -1,25 +1,19 @@
 #!/bin/bash
 
-###############################
-#       GTN GAME       #
-#     BASH VERSION 1.1       #
-#       Cesroket         #
-###############################
-
 clear
-
 cat << "EOF"
 
 ###############################################
 #                                             #
 #   WELCOME TO THE ULTIMATE GUESSING GAME!    #
-#         Can you crack the code?            #
+#         Can you crack the code?             #
+#              BASH VERSION 1.1               #
+#                by Cesroket                  #
 #                                             #
 ###############################################
-
 EOF
 
-sleep 2  # 2 are the seconds
+sleep 2  # 2s
 
 spinner=("|" "/" "-" "\\")
 for i in {1..10}
@@ -28,11 +22,7 @@ do
     sleep 0.1
 done
 
-echo "Ready to play?"
 echo
-
-
-
 
 # insert players name
 read -p "Insert player 1 name: " player1
@@ -71,7 +61,7 @@ gameOver=false
 while true; do
     echo "Round $round"
 
-    # p1 list atempts
+    # p1 list attempts
     if [ ${#attempts1[@]} -gt 0 ]; then
         echo "Previous attempts by $player1:"
         for attempt in "${attempts1[@]}"; do
@@ -129,7 +119,7 @@ while true; do
         gameOver=true
     fi
 
-    # p2 previous attemps
+    # p2 previous attempts
     if [ ${#attempts2[@]} -gt 0 ]; then
         echo "Previous attempts by $player2:"
         for attempt in "${attempts2[@]}"; do
