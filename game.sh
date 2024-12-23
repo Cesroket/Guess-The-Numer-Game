@@ -174,6 +174,7 @@ while true; do
     # check p2 have a correct guess?
     if [[ "$guess2" == "$secretNumber1" ]]; then
         echo "$player2 guessed the number! $player2 wins!"
+        echo "If both players guess their number is a tie game!!!"
         break
     fi
 
